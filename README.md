@@ -1,6 +1,3 @@
-# Portfolio
-This is my Portfolio
-
-Here I show case my all projects that i've created.
-
-this isn't a open-source project but still if somebody wants to change the styles of the page can do so. 
+#portfolio
+Finally, i made a portfolio website to make better online presence. It is a simple single webpage so i decided to host it with github pages, It is made using plane HTML & CSS
+Please add styling changes if you have any ideas. 

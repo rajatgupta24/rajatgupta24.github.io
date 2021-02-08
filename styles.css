@@ -20,32 +20,34 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.introduction-text{
     color: rgba(0,0,0,.75);
 }
 
 .name{
     font-size: 5rem;
+    font-weight: 400;
 }
 
 .introduction-image{
     border-radius: 50%;
 }
 
+.heading{
+    margin: 1rem 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.content{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 .myself{
     margin: 0 auto 2rem auto;
 }
 
-.aboutme, .skills{
-    margin: 1rem 0;
-}
 
-
-.skills h2, .aboutme h2{
-    margin: 0 0 .5rem 0;
-}
 
 .icons{
     display: flex;
@@ -65,22 +67,20 @@ body{
     background: rgba(0,0,0,.07);
 }
 
-.skill p {
-    font-size: 1.2rem;
-    color: rgba(0,0,0,.75);
-}
-
 .icon{
-    margin-right: .25rem;
+    margin-right: .5rem;
     width: 2rem;
 }
 
-.education{
-    margin: 4rem auto;
+.icon-name {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgba(0,0,0,.75);
+
 }
 
-.heading{
-    margin: 1rem 0;
+.education, .experience{
+    margin: 4rem auto;
 }
 
 .degree{
@@ -90,9 +90,19 @@ body{
 .college{
     margin: 0.25rem 0;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .time{
     margin: 1rem 0;
     font-size: 1rem;
+}
+
+.exp{
+    margin: 3rem 0;
+}
+
+.description{
+    font-size: 1rem;
+    font-weight: 300;
 }

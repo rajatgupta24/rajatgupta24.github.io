@@ -5,12 +5,14 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
+    font-size: 1.5rem;
 }
 
 .container{
     margin: 0 auto;
+    width: 80%;
 }
 
 .introduction{
@@ -21,7 +23,6 @@ body{
 }
 
 .introduction-text{
-    font-size: 1.5rem;
     color: rgba(0,0,0,.75);
 }
 
@@ -33,3 +34,65 @@ body{
     border-radius: 50%;
 }
 
+.myself{
+    margin: 0 auto 2rem auto;
+}
+
+.aboutme, .skills{
+    margin: 1rem 0;
+}
+
+
+.skills h2, .aboutme h2{
+    margin: 0 0 .5rem 0;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    margin: .25rem;
+    padding: .5rem 1rem;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.skill:hover{
+    background: rgba(0,0,0,.07);
+}
+
+.skill p {
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.75);
+}
+
+.icon{
+    margin-right: .25rem;
+    width: 2rem;
+}
+
+.education{
+    margin: 4rem auto;
+}
+
+.heading{
+    margin: 1rem 0;
+}
+
+.degree{
+    font-size: 1.75rem;
+}
+
+.college{
+    margin: 0.25rem 0;
+    font-size: 1.2rem;
+}
+
+.time{
+    margin: 1rem 0;
+    font-size: 1rem;
+}

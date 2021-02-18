@@ -104,3 +104,16 @@ body{
     font-size: 1rem;
     font-weight: 300;
 }
+
+.cont-link{
+    margin: 2rem 0;
+}
+
+.cont-icon{
+    margin: 0 1rem;
+}
+
+.na{
+    font-size: 1rem;
+    color: #aaa;
+}

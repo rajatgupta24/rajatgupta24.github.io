@@ -6,7 +6,7 @@
 		<title>Rajat Gupta</title>
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
 
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="responsive.css">
@@ -22,9 +22,8 @@
 
 	</head>
 	<body>
-
 		<div class="container">
-
+			<canvas id="dot_line" style="background-color: transparent;"></canvas>
 			<div class="introduction">
 				<div>
 					<h1 class="name">Rajat Gupta</h1>
@@ -159,6 +158,25 @@
 			</div>
 
 		</div>
+
+		<script>
+
+			window.onload = function(){
+			var w = document.documentElement.clientWidth,
+				h = document.documentElement.clientHeight;
+			
+			var dotline = new Dotline({
+				dom:'dot_line', //#id
+				cw:window.innerWidth,  //画布宽
+				ch:window.innerHeight,//画布高
+				ds:250,//点的个数
+				r:2,//圆点半径
+				cl:'#555',//粒子线颜色
+				dis:100//触发连线的距离
+			}).start();
+			}
+		</script>
+		<script src="index.js"></script>
 	</body>
 </html>
 

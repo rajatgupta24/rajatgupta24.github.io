@@ -13,6 +13,13 @@ body{
 .container{
     margin: 0 auto;
     width: 80%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#dot_line{
+    position: absolute;
+    left: -20%;
 }
 
 .introduction{
@@ -30,6 +37,7 @@ body{
 
 .introduction-image{
     border-radius: 50%;
+    z-index: 2;
 }
 
 .heading{

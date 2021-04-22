@@ -1,65 +1,51 @@
 @media screen and (max-width: 730px){
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;    
-    }
+  .container{
+    margin: 1rem auto;
+    width: 90%;
+  }
 
-    body{
-        font-size: 20px;
-    }
+  .introduction{
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .name{
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+  }
 
-    nav{
-        padding: 2vh 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .introduction-image{
+    margin: 3rem 0;
+    width: 80vw;
+  }
 
-    .name{
-        margin: 10px;
-    }
+  .heading{
+    margin: 3rem 0 1rem 0;
+    font-size: 2rem;
+  }
 
-    .container{
-        height: 90vh;
-        padding-top: 7vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+  .content {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+  }
 
-    img{
-        height: 200px;
-        width: 200px;
-    }
+  .skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-    .intro{
-        padding: 0 5vw;
-    }
+  .skill{
+    margin: 0.25rem 0.5rem;
+    width: 40%;
+    display: flex; 
+  }
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .left{
-        margin: 2vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 15px;
-    }
-
-    .right{
-        margin: 2vh 25vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-size: 15px;
-    }
-
-    .copy-text{
-        padding-top: 20px;
-    }
+  .icon-name{
+    width: .5rem;
+  }
 }

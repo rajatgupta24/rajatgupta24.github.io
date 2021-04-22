@@ -1,127 +1,128 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 .container{
-    margin: 0 auto;
-    width: 80%;
-    position: relative;
-    overflow-x: hidden;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 #dot_line{
-    position: absolute;
-    left: -20%;
+  position: absolute;
+  left: -20%;
+  z-index: -1;
 }
 
 .introduction{
-    padding: 20rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: rgba(0,0,0,.75);
+  padding: 20rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgba(0,0,0,.75);
 }
 
 .name{
-    font-size: 5rem;
-    font-weight: 400;
+  font-size: 5rem;
+  font-weight: 400;
 }
 
 .introduction-image{
-    border-radius: 50%;
-    z-index: 2;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 .heading{
-    margin: 2rem 0;
-    font-size: 2.2rem;
-    font-weight: 700;
+  margin: 2rem 0;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 .content{
-    font-size: 1.5rem;
-    font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .myself{
-    margin: 0 auto 2rem auto;
+  margin: 0 auto 2rem auto;
 }
 
 .icons{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skill{
-    margin: .25rem;
-    padding: .5rem 1rem;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
+  margin: .25rem;
+  padding: .5rem 1rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .skill:hover{
-    background: rgba(0,0,0,.07);
+  background: rgba(0,0,0,.07);
 }
 
 .icon{
-    margin-right: .5rem;
-    width: 2rem;
+  margin-right: .5rem;
+  width: 2rem;
 }
 
 .icon-name {
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: rgba(0,0,0,.75);
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(0,0,0,.75);
 
 }
 
 .education, .experience{
-    margin: 4rem auto;
+  margin: 4rem auto;
 }
 
 .degree{
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 .college{
-    margin: 0.25rem 0;
-    font-size: 1.2rem;
-    text-decoration: none;
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .time{
-    margin: 1rem 0;
-    font-size: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
 }
 
 .exp{
-    margin: 0 0 4rem 0;
+  margin: 0 0 4rem 0;
 }
 
 .description{
-    font-size: 1rem;
-    font-weight: 300;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .cont-link{
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .cont-icon{
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .na{
-    font-size: 1rem;
-    color: #aaa;
+  font-size: 1rem;
+  color: #aaa;
 }

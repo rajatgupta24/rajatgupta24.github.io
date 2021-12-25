@@ -6,9 +6,28 @@
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .section-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/bg-2.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bg-2.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../assets/bg-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg-2.jpg");
   background-size: cover;
 }
 
@@ -74,7 +93,7 @@ header p {
 }
 
 .work h2 {
-  margin: 5rem 0;
+  margin: 5rem 0 0 0;
   font-size: 4rem;
   font-weight: 400;
 }
@@ -148,6 +167,21 @@ header p {
   margin: 0 3rem;
 }
 
+.open {
+  margin: 0 auto;
+  width: 80rem;
+}
+
+.open h2 {
+  margin: 5rem 0 0 0;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.open p {
+  margin: 3rem 0;
+}
+
 .showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,17 +229,13 @@ header p {
 
 .hire button {
   margin: 3rem;
-  padding: .5rem 1rem;
+  padding: 1rem 2rem;
   font-size: 2rem;
-  -webkit-box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-          box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-  -webkit-box-shadow: 2px 1000px 1px #fff inset;
-          box-shadow: 2px 1000px 1px #fff inset;
-  border: solid 3px transparent;
+  background: -webkit-linear-gradient(180deg, #ff416c, #ff4b2b);
+  color: #fff;
+  letter-spacing: .3rem;
+  border: none;
   border-radius: 4rem;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(170deg, #78e4ff, #ff48fa);
-  background-clip: content-box, border-box;
-  background-origin: border-box;
 }
 
 footer {
@@ -244,9 +274,26 @@ footer h2 {
 
 footer .social-link {
   margin: 2rem 1rem;
+  width: 3rem;
 }
 
 footer .copy {
   color: #777;
+}
+
+.underline {
+  width: 7rem;
+  height: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(180deg, #ff416c, #ff4b2b);
+  border-radius: 1rem;
+}
+
+.grad-text {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(180deg, #ff416c, #ff4b2b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=styles.css.map */

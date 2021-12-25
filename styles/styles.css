@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.section-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/bg-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bg-2.jpg");
+  background-size: cover;
+}
+
+nav {
+  margin: 0 auto;
+  width: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 1rem 2rem;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #efefef;
+  text-decoration: none;
+  letter-spacing: .125rem;
+}
+
+header {
+  margin: 0 auto;
+  width: 80rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header h1 {
+  margin-top: 15rem;
+  font-size: 6rem;
+  color: #efefef;
+}
+
+header p {
+  margin-top: 2rem;
+  font-size: 2.25rem;
+  color: #efefef;
+}
+
+.work {
+  margin: 0 auto;
+  width: 80rem;
+}
+
+.work h2 {
+  margin: 5rem 0;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.work .project, .work .project1 {
+  margin: 7rem auto 12rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #efefef;
+}
+
+.work .project .info, .work .project1 .info {
+  margin: 0 2rem;
+  font-weight: 300;
+}
+
+.work .project .info h3, .work .project1 .info h3 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.work .project .info p, .work .project1 .info p {
+  margin: 1rem 0 1.5rem 0;
+  font-weight: 300;
+}
+
+.work .project .info li, .work .project1 .info li {
+  margin: .5rem 1rem;
+  font-weight: 300;
+}
+
+.work .project .poster, .work .project1 .poster {
+  width: 75rem;
+  height: 35rem;
+  overflow: hidden;
+}
+
+.work .project .poster img, .work .project1 .poster img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.work .project .poster img:hover, .work .project1 .poster img:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+.work .project1 {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+}
+
+.work .project1 .info {
+  margin: 0 3rem;
+}
+
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase .row {
+  margin: 1rem;
+  width: 10rem;
+}
+
+.showcase .row img {
+  margin: 1rem;
+  width: 100%;
+  background-size: contain;
+}
+
+.hire {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #Ebf6f7;
+}
+
+.hire p {
+  font-size: 3rem;
+}
+
+.hire button {
+  margin: 3rem;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  -webkit-box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+          box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  -webkit-box-shadow: 2px 1000px 1px #fff inset;
+          box-shadow: 2px 1000px 1px #fff inset;
+  border: solid 3px transparent;
+  border-radius: 4rem;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(170deg, #78e4ff, #ff48fa);
+  background-clip: content-box, border-box;
+  background-origin: border-box;
+}
+
+footer {
+  height: 50vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/bg-1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bg-1.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+footer h2, footer p {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #efefef;
+}
+
+footer h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+footer .social-link {
+  margin: 2rem 1rem;
+}
+
+footer .copy {
+  color: #777;
+}
+/*# sourceMappingURL=styles.css.map */

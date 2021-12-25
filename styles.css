@@ -17,11 +17,13 @@ body{
   overflow-x: hidden;
 }
 
-#dot_line{
+/* #dot_line{
   position: absolute;
   left: -20%;
   z-index: -1;
-}
+  background-image: url(./assets/bg-1.jpg);
+  background-size: cover;
+} */
 
 .introduction{
   padding: 20rem 0;

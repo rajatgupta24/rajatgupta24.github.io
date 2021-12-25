@@ -5,24 +5,27 @@
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 1.5rem;
+} 
+
+::-webkit-scrollbar{
     width: 10px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
     background: #eee;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb{
     background: #888;
-  }
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover{
     background: #555;
-  }
+}
 
 .section-1{
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../assets/bg-2.jpg");

@@ -164,6 +164,7 @@ header{
                 height: 100%;
                 overflow: hidden;
                 transition: all .25s ease-in;
+                object-fit: contain;
 
                 &:hover{
                     transform: scale(1.025);
@@ -197,21 +198,18 @@ header{
 
             .info{
                 margin: 0 1rem;
+                
                 h3{
                     font-size: 1.5rem;
                 }
             }
 
             .poster{
-                height: 15rem;
-            }
-        }
-
-        .project1{
-            flex-direction: column-reverse;
-    
-            .info{
-                margin: 0 1rem;
+                height: 10rem;
+                
+                img{
+                    width: 100%;
+                }
             }
         }
     }

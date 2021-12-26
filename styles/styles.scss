@@ -5,6 +5,8 @@
     overflow-x: hidden;
 }
 
+$sm: 600px;
+
 body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -46,11 +48,23 @@ nav{
             margin: 1rem 2rem;
 
             a{
-                font-size: 1.5rem;
+                font-size: 1rem;
                 font-weight: 200;
                 color: #efefef;
                 text-decoration: none;
                 letter-spacing: .125rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        width: 100%;
+        flex-direction: row;
+
+        ul{
+            width: 100%;
+            li{
+                margin: 1rem auto;
             }
         }
     }
@@ -59,35 +73,54 @@ nav{
 header{
     margin: 0 auto;
     width: 80rem;
+    padding: 0 2rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
 
     h1{
-        margin-top: 15rem;
-        font-size: 6rem;
+        width: 75%;
+        // background: #ddd;
+        margin: 15rem 5rem 1rem 0;
+        font-size: 4rem;
         color: #efefef;
+
     }
 
     p{
         margin-top: 2rem;
-        font-size: 2.25rem;
+        font-size: 2rem;
         color: #efefef;
+    }
+
+    @media screen and (max-width: $sm) {
+        padding: 1rem;
+        width: 100%;
+
+        h1{
+            margin-top: 13rem;
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
     }
 }
 
 .work{
     margin: 0 auto;
+    padding: 1rem 2rem;
     width: 80rem;
 
     h2{
         margin: 5rem 0 0 0;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 400;
     }
 
     .project, .project1{
-        margin: 7rem auto 12rem auto;
+        margin: 5rem auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -100,17 +133,23 @@ header{
 
             h3{
                 margin: 1rem 0;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: 300;
             }
 
             p{
                 margin: 1rem 0 1.5rem 0;
+                font-size: 1rem;
                 font-weight: 300;
+            }
+
+            ul{
+                list-style: inside;
             }
 
             li{
                 margin: .5rem 1rem;
+                font-size: 1rem;
                 font-weight: 300;
             }
         }
@@ -134,26 +173,73 @@ header{
     }
 
     .project1{
-        flex-direction: row-reverse !important;
+        flex-direction: row-reverse;
 
         .info{
             margin: 0 3rem;
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        width: 100%;
+
+        h2{
+            margin: 2rem 0 0 0;
+            font-size: 2rem;
+        }
+        
+        .project, .project1{
+            margin: 2rem 0;
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+
+            .info{
+                margin: 0 1rem;
+                h3{
+                    font-size: 1.5rem;
+                }
+            }
+
+            .poster{
+                height: 15rem;
+            }
+        }
+
+        .project1{
+            flex-direction: column-reverse;
+    
+            .info{
+                margin: 0 1rem;
+            }
         }
     }
 }
 
 .open{
     margin: 0 auto;
+    padding: 1rem 2rem;
     width: 80rem;
 
     h2{
         margin: 5rem 0 0 0;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 400;
     }
 
     p{
         margin: 3rem 0;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: $sm) {
+        width: 100%;
+
+        h2{
+            margin: 5rem 0 0 0;
+            font-size: 2rem;
+        }
     }
 }
 
@@ -163,11 +249,11 @@ header{
     align-items: center;
 
     .row{
-        margin: 1rem;
+        margin: 1rem 0;
         width: 10rem;
 
         img{
-            margin: 1rem;
+            margin: 1rem 0;
             width: 100%;
             background-size: contain;
         }
@@ -181,20 +267,35 @@ header{
     align-items: center;
     justify-content: center;
     background: #Ebf6f7;
+    text-align: center;
+
 
     p{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     button{
         margin: 3rem;
         padding: 1rem 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         background: -webkit-linear-gradient(180deg, #ff416c, #ff4b2b);
         color: #fff;
         letter-spacing: .3rem;
         border: none;
         border-radius: 4rem;
+    }
+
+    @media screen and (max-width: $sm) {
+        height: auto;
+        p{
+            margin: 2rem 1rem 0 1rem;
+            font-size: 1.5rem;
+        }
+
+        button{
+            margin: 2rem 1rem;
+            font-size: 1rem;
+        }
     }
 }
 
@@ -211,13 +312,13 @@ footer{
 
     h2, p{
         margin: 1rem;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 200;
         color: #efefef;
     }
 
     h2{
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 300;
     }
 
@@ -228,6 +329,22 @@ footer{
 
     .copy{
         color: #777;
+    }
+
+    @media screen and (max-width: $sm) {
+        height: auto;
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+
+        .social-link{
+            width: 2rem;
+        }
     }
 }
 

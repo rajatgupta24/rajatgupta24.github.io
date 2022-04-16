@@ -1,18 +1,77 @@
+$bg-color-1: #1A1A2E;
+$bg-color-2: #16213E;
+$bg-color-3: #0F3460;
+$bg-color-4: #E94560;
+
+$text-color-1: #fff;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 80rem;
+    overflow-x: hidden;
+}
+
+
 nav{
+    padding: 1rem;
+    width: 100%;
+
     display: flex;
     flex-direction: row-reverse;
+
+    background-color: $bg-color-1;
+    color: $text-color-1;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
     ul{
+
         display: flex;
         list-style: none;
+
+        a{
+            margin: 1rem 2rem;
+            text-decoration: none;
+            color: $text-color-1;
+        }
     }
 }
 
-.highlighted-text{
-    color: #497;
+.hero{
+    height: 93vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+  
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("./assets/pic1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        font-weight: 400;
+        font-size: 3rem;
+
+        .highlighted-text{
+            font-weight: 600;
+            // color: $bg-color-3;
+
+            background: -webkit-linear-gradient(yellow, $bg-color-4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
 }
+

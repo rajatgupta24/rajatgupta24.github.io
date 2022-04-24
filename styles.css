@@ -162,6 +162,11 @@ nav ul a {
   height: 7rem;
 }
 
+.experience .e-card .link {
+  margin-top: .5rem;
+  color: #DD4A48;
+}
+
 @media screen and (max-width: 768px) {
   .experience .e-card {
     margin: 2rem;

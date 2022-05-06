@@ -2,19 +2,18 @@ $bg-color-1: #1A1A2E;
 $bg-color-2: #16213E;
 $bg-color-3: #0F3460;
 $bg-color-4: #DD4A48;
-
 $text-color-1: #fff;
-
 $font-family: 'Poppins', sans-serif;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-canvas{
-    margin: 0 auto;
+    font-family: $font-family;
+    ::selection {
+        color: black;
+        background: yellow;
+    }
 }
 
 html{
@@ -26,312 +25,56 @@ html{
 
 body{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
-nav{
-    padding: 1rem;
-    width: 80rem;
+.left{
     position: fixed;
-
-    display: flex;
-    flex-direction: row-reverse;
-
-    background-color: $bg-color-1;
-    color: $text-color-1;
-
-    font-family: $font-family;
-    font-weight: 300;
-
+    top: 30vh;
     ul{
-
-        display: flex;
         list-style: none;
-
-        a{
-            margin: 1rem 2rem;
-            text-decoration: none;
-            color: $text-color-1;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 100vw;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: baseline;
-
-        ul{
-            display: flex;
+        li{
+            margin-bottom: 1rem;
+            padding: 1rem 2rem;
+            background-color: #000;
             a{
-                margin: 1rem;
+                font-size: 1.25rem;            
+                color: #fff;
+                text-decoration: none;
             }
         }
     }
 }
 
-.hero{
-    height: 93vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: $font-family;
-  
-    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("./assets/pic1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    h1{
-        font-weight: 400;
-        font-size: 3rem;
-
+.right{
+    width: 80%;
+    margin-left: auto;
+    header{
+        padding: 20vh 0 10vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: $font-family;
         color: #fff;
-
-        .highlighted-text{
+        h1{
+            font-size: 5rem;
+            font-weight: 300;
+        }
+        .selectedT{
+            font-size: 5rem;
             font-weight: 600;
-            // color: $bg-color-3;
-
-            background: -webkit-linear-gradient(yellow, $bg-color-4);
+            background: #f7ff00; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f7ff00, #db36a4); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f7ff00, #db36a4);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-        @media screen and (max-width: 768px) {
-            margin-left: 1rem;
-            font-size: 2.5rem;
-        }        
     }
-
-}
-
-.tags{
-    margin: 2rem auto 0 auto;
-    width: 7rem;
-
-    font-family: $font-family;
-    font-weight: 400;
-    text-align: center;
-
-    color: #fff;
-    background-color: $bg-color-4;
-    border-radius: .75rem;
-}
-
-.experience{
-    margin-top: 8rem;
-    padding-bottom: 4rem;
-    border: 1px solid #fff;
-    border-radius: 1rem;
-
-    .e-card{
-        margin: 3rem 4rem 0 4rem;
-        padding: 2rem;
-
-        display: flex;
-
-        font-family: $font-family;        
-        color: #fff;
-        background: rgba(30, 104, 192, .25);
-        border-radius: .5rem;
-
-        h3{
-            margin-bottom: .5rem;
-            font-weight: 500;
-        }
-
-        li{
-            margin: 0.3rem 0.25rem;
-            font-size: .9rem;
-            word-spacing: .25rem;
-        }
-
-        a{
-            margin-top: 0.5em;
-            color: #fff;
-            font-size: .9rem;
-        }
-
-        img{
-            margin-right: 3rem;
-            width: 9rem;
-            height: 7rem;
-        }
-
-        .link{
-            margin-top: .5rem;
-            color: $bg-color-4;
-        }
-
-        @media screen and (max-width: 768px) {
-            margin: 2rem;
-            flex-direction: column;
-
-            img{
-                margin: auto;
-                margin-bottom: 1rem;
-
-                width: 90%;
-                height: 9rem;
-            }
-        }   
-    }
-}
-
-.blogs{
-    margin: 8rem 0;
-    font-family: $font-family;
-
-    .container{
-        margin-top: 3rem;
-        display: flex;
-    }
-
-    .section{
-        width: 50%;
-    }
-
-    .b{
-        display: flex;
-        background: rgba(30, 104, 192, .25);
-    }
-
-    .b-1{
-        margin-right: 2rem;
-        border-top-left-radius: 4rem;
-        border-bottom-left-radius: 4rem;
-
-        position: relative;
-
-        h1{
-            position: absolute;
-            top: 10%;
-            left: 10%;
-            font-size: 3rem;
-            font-weight: 300;
-            z-index: 10; 
-        }
-
-        p{
-            position: absolute;
-            top: 30%;
-            left: 11%;
-            font-size: 1.5rem;
-            font-weight: 300;
-            z-index: 10;
-        }
-
-        img{
-            width: 100%;
-            border-top-left-radius: 4rem;
-            border-bottom-left-radius: 4rem;    
-        }
-    }
-
-    .b-2{
-        display: flex;
-
-        h1{
-            margin: 2rem 2rem 0 2rem;
-            font-weight: 300;
-            color: #fff;
-        }
-
-        p{
-            margin: 0 2rem;
-            font-weight: 300;
-            color: #fff;
-        }
-
-        img{
-            width: 50%;
-        }
-    }
-
-    .b-22{
-        margin-bottom: 2rem;
-        border-top-right-radius: 4rem;
-    }
-
-    .b-23{
-        border-bottom-right-radius: 4rem;
-    }
-
-    .squares{
-        display: flex;
-        justify-content: space-between;
-     
-        .w{
-            margin: 2rem 0;
-            padding: 3rem;
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            font-size: 1.25rem;
-            font-weight: 200;
-            color: #fff;
-            background: rgba(30, 104, 192, .25);
-            border-radius: 1rem;
-        }
-
-        .w-5{
-            width: 25%;
-        }
-
-        .w-10{
-            margin: 2rem 2rem;
-            width: 50%;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        .container{
-            margin-top: 1rem;
-            flex-direction: column;
-        }
-
-        .section{
-            margin: 1rem auto 0 auto;
-            width: 90%;
-        }
-
-        .b-1{
-            margin: 1rem auto;
-            border-radius: 1rem;
-
-            p{
-                top: 35%;
-            }
-
-            img{
-                border-radius: 1rem;
-            }
-        }
-        
-
-        .b-22, .b-23{
-            border-radius: 1rem;
-        }
-
-        .squares{
-            flex-direction: column; 
-            align-items: center;
-            justify-content: center;
-
-            .w{
-                margin: 2rem;
-                padding: 1rem;
-                font-size: 1rem;
-            }
-    
-            .w-5{
-                display: none;
-            }
-        }
-    }
+    canvas{
+        margin: 0 auto;
+    }    
 }

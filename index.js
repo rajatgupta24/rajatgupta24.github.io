@@ -22,7 +22,7 @@ const renderer = new THREE.WebGLRenderer({
     alpha: true
 });
 
-renderer.setSize(500, 500);
+// renderer.setSize(500, 500);
 
 const tick = () => {
     window.requestAnimationFrame(tick)
@@ -34,7 +34,15 @@ const tick = () => {
 
 tick()
 
-document.body.append(renderer.domElement)
+// document.body.append(renderer.domElement)
+
+const CANVAS_WIDTH = 500;
+const CANVAS_HEIGHT = 500;
+
+
+const canvas = document.querySelector("#anime");
+renderer.setSize( CANVAS_WIDTH, CANVAS_HEIGHT );      
+canvas.appendChild( renderer.domElement );
 
 const cursor = {
     x: 0,
@@ -52,4 +60,5 @@ window.addEventListener("mousemove", (e) => {
     camera.position.y = (cameraY - camera.position.y) / 5
 })
 
-
+console.log(window.innerWidth / 2)
+console.log(canvas.offsetHeight)

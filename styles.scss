@@ -10,71 +10,286 @@ $font-family: 'Poppins', sans-serif;
     padding: 0;
     box-sizing: border-box;
     font-family: $font-family;
-    ::selection {
-        color: black;
-        background: yellow;
+    overflow-x: hidden;
+    // &::selection {
+    //     color: black;
+    //     background: yellow;
+    // }
+    &::-webkit-scrollbar{
+        width: .5rem;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }  
+    &::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 1rem;
+    }
+    &::-webkit-scrollbar-track-piece{
+        background-color: #232323;
     }
 }
 
-html{
-    margin: 0 auto;
-    max-width: 80rem;
-    overflow-x: hidden;
+body{
     background: radial-gradient(#000, $bg-color-2);
 }
 
-body{
-    width: 100%;
+nav{
+    padding: 1rem 5rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-.left{
-    position: fixed;
-    top: 30vh;
+    flex-direction: row-reverse;
     ul{
         list-style: none;
+        display: flex;
         li{
-            margin-bottom: 1rem;
-            padding: 1rem 2rem;
-            background-color: #000;
+            margin: 1rem;
             a{
-                font-size: 1.25rem;            
+                font-weight: 300;
                 color: #fff;
                 text-decoration: none;
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem 2rem;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
-.right{
-    width: 80%;
-    margin-left: auto;
-    header{
-        padding: 20vh 0 10vh 0;
+@mixin gradientText() {
+    background: #f7ff00; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7ff00, #db36a4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7ff00, #db36a4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+header{
+    margin: 10vh auto;
+    width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: $font-family;
+    color: #fff;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+    .name{
+        font-weight: 600;
+    }
+    .selectedT{
+        @include gradientText;
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 7vh auto;
+        width: 75vw;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        font-family: $font-family;
-        color: #fff;
+        flex-direction: column;
         h1{
-            font-size: 5rem;
-            font-weight: 300;
-        }
-        .selectedT{
-            font-size: 5rem;
-            font-weight: 600;
-            background: #f7ff00; /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #f7ff00, #db36a4); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #f7ff00, #db36a4);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
         }
     }
-    canvas{
-        margin: 0 auto;
-    }    
 }
+
+.about{
+    margin: 15vh auto;
+    max-width: 60rem;
+    color: #fff;
+
+    @media screen and (max-width: 768px) {
+        margin: 15vh 2.5rem;
+    }
+}
+
+// html{
+//     margin: 0 auto;
+//     max-width: 80rem;
+//     overflow-x: hidden;
+//     background: radial-gradient(#000, $bg-color-2);
+// }
+
+// body{
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     position: relative;
+// }
+
+// .left{
+//     position: fixed;
+//     top: 30vh;
+//     ul{
+//         list-style: none;
+//         li{
+//             margin-bottom: 1rem;
+//             padding: 1rem 2rem;
+//             background-color: #000;
+//             a{
+//                 font-size: 1.25rem;            
+//                 color: #fff;
+//                 text-decoration: none;
+                
+//                 &:hover{
+//                     background: #f7ff00; /* fallback for old browsers */
+//                     background: -webkit-linear-gradient(to right, #f7ff00, #db36a4); /* Chrome 10-25, Safari 5.1-6 */
+//                     background: linear-gradient(to right, #f7ff00, #db36a4);
+//                     background-clip: text;
+//                     -webkit-background-clip: text;
+//                     -webkit-text-fill-color: transparent;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .right{
+//     width: 80%;
+//     margin-left: auto;
+//     header{
+//         margin-bottom: 3rem;
+//         padding: 20vh 0 10vh 0;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-evenly;
+//         font-family: $font-family;
+//         color: #fff;
+//         h1{
+//             font-size: 5rem;
+//             font-weight: 300;
+//         }
+//         .selectedT{
+//             font-size: 5rem;
+//             font-weight: 600;
+//             background: #f7ff00; /* fallback for old browsers */
+//             background: -webkit-linear-gradient(to right, #f7ff00, #db36a4); /* Chrome 10-25, Safari 5.1-6 */
+//             background: linear-gradient(to right, #f7ff00, #db36a4);
+//             background-clip: text;
+//             -webkit-background-clip: text;
+//             -webkit-text-fill-color: transparent;
+//         }
+//     }
+//     canvas{
+//         margin: 0 auto;
+//     }
+//     .tag {
+//         --r: 2rem; /* radius */
+//         --b: 3px; /* border width */
+//         background: linear-gradient(to right, #f7ff00, #db36a4);
+//         -webkit-background-clip: text;
+//         background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//         color: transparent;
+        
+//         border-radius: var(--r);
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         font: 1.5rem 'Oswald', Arial, sans-serif;
+//         height: 3rem;
+//         margin: 3rem auto;
+//         position: relative;
+//         z-index:0;
+//         text-decoration: none;
+//         width: fit-content;
+//         padding: 0 2rem;
+//       }
+//       .tag::before {
+//         content:"";
+//         position:absolute;
+//         z-index:-1;
+//         top:0;
+//         left:0;
+//         right:0;
+//         bottom:0;
+//         border-radius: var(--r);
+//         border: var(--b) solid transparent;
+//         border-radius: var(--r);
+//         background: inherit;
+//         background-origin:border-box;
+//         background-clip:border-box;
+//         -webkit-mask:
+//           linear-gradient(#fff 0 0) padding-box,
+//           linear-gradient(#fff 0 0);
+//         -webkit-mask-composite:destination-out;
+//         mask-composite: exclude;
+//         -webkit-mask-repeat:no-repeat;
+//     }
+    
+//     .work{
+//         margin: 1rem 0 10rem 0;
+//     }
+
+//     .work-card{
+//         margin: 4rem 0;
+//         height: 22vh;
+//         display: flex;
+//         border: 1px solid #fff;
+//         border-radius: 1rem;
+//         color: #fff;
+//         img{
+//             border-top-left-radius: 1rem;
+//             border-bottom-left-radius: 1rem;
+//         }
+//         .info{
+//             margin: 1rem 2rem;
+//             ul{
+//                 list-style: none;
+//             }
+//         }
+//     }
+
+//     .project{
+//         margin: 1rem 5rem 10rem 5rem;
+//         img{
+//             width: 50%;
+//             border-top-left-radius: 3rem;
+//             border-bottom-left-radius: 3rem;
+//         }
+//         .project-card{
+//             margin: 4rem 0;
+//             display: flex;
+//             background: $bg-color-2;
+//             box-shadow: 0px 0px 10px 0px #222;
+//             border-radius: 3rem;
+//             color: #fff;
+//             .info{
+//                 margin: 2rem 3rem;
+//             }
+//         }
+//     }
+
+//     .blog{
+//         width: 100%;
+//         display: flex;
+//         justify-content: space-between;
+//     }
+
+//     .blog-card{
+//         margin: 1rem 0;
+//         display: flex;
+//         flex-direction: column;
+//         background: $bg-color-2;
+//         box-shadow: 0px 0px 10px 0px #222;
+//         border-radius: 2rem;
+//         color: #fff;
+//         img{
+//             border-top-left-radius: 2rem;
+//             border-top-right-radius: 2rem;
+//         }        
+//         .info{
+//             margin: 2rem 2rem;
+//             ul{
+//                 list-style: none;
+//             }
+//         }
+//     }
+// }

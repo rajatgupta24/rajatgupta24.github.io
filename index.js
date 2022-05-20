@@ -22,8 +22,6 @@ const renderer = new THREE.WebGLRenderer({
     alpha: true
 });
 
-// renderer.setSize(500, 500);
-
 const tick = () => {
     window.requestAnimationFrame(tick)
 
@@ -34,10 +32,8 @@ const tick = () => {
 
 tick()
 
-// document.body.append(renderer.domElement)
-
-const CANVAS_WIDTH = 500;
-const CANVAS_HEIGHT = 500;
+const CANVAS_WIDTH = 300;
+const CANVAS_HEIGHT = 300;
 
 
 const canvas = document.querySelector("#anime");
@@ -60,5 +56,72 @@ window.addEventListener("mousemove", (e) => {
     camera.position.y = (cameraY - camera.position.y) / 5
 })
 
-console.log(window.innerWidth / 2)
-console.log(canvas.offsetHeight)
+var request = new XMLHttpRequest();
+   request.open("GET", "./data/work.json", false);
+   request.send(null)
+   var work = JSON.parse(request.responseText);
+
+for (let i = 0; i < work.length; i++) {
+    const e = work[i];
+    const workBox = document.querySelector(".work");
+    const ele = document.createElement('div');
+    ele.innerHTML = `
+        <div class="work-card">
+            <img src=${e.img} alt="">
+            <div class="info">
+                <h2>${e.title}</h2>
+                <ul>
+                    <li>${e.li[0]}</li>
+                    <li>${e.li[2]}</li>
+                    <li>${e.li[2]}</li>
+                </ul>
+                <p>Visit: <a href=${e.link}>here</a></p>
+            </div>
+        </div>
+    `;
+    workBox.appendChild(ele)
+}
+
+var request = new XMLHttpRequest();
+   request.open("GET", "./data/blog.json", false);
+   request.send(null)
+   var work = JSON.parse(request.responseText);
+
+for (let i = 0; i < work.length; i++) {
+    const e = work[i];
+    const blogBox = document.querySelector(".blog");
+    const ele = document.createElement('div');
+
+    ele.innerHTML = `
+        <div class="blog-card">
+            <img src=${e.img} alt="">
+            <div class="info">
+                <h2>${e.title}</h2>
+                <p>${e.content}</p>
+            </div>
+        </div>
+    `;
+    blogBox.appendChild(ele)
+}
+
+var request = new XMLHttpRequest();
+   request.open("GET", "./data/project.json", false);
+   request.send(null)
+   var work = JSON.parse(request.responseText);
+
+for (let i = 0; i < work.length; i++) {
+    const e = work[i];
+    const blogBox = document.querySelector(".project");
+    const ele = document.createElement('div');
+
+    ele.innerHTML = `
+        <div class="project-card">
+            <img src=${e.img} alt="">
+            <div class="info">
+                <h2>${e.title}</h2>
+                <p>${e.content}</p>
+            </div>
+        </div>
+    `;
+    blogBox.appendChild(ele)
+}

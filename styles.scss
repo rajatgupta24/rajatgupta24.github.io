@@ -52,9 +52,10 @@ nav{
     }
 
     @media screen and (max-width: 768px) {
-        padding: 1rem 2rem;
+        padding: 1rem;
         flex-direction: row;
         justify-content: center;
+
     }
 }
 
@@ -68,15 +69,17 @@ nav{
 }
 
 header{
-    margin: 10vh auto;
+    margin: 0 auto;
+    padding: 1rem;
     width: 80rem;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-family: $font-family;
     color: #fff;
     h1{
-        font-size: 2.5rem;
+        font-size: 4rem;
         font-weight: 300;
     }
     .name{
@@ -84,11 +87,12 @@ header{
     }
     .selectedT{
         @include gradientText;
+        font-size: 4.5rem;
         font-weight: 600;
     }
 
     @media screen and (max-width: 768px) {
-        margin: 7vh auto;
+        margin: 10vh auto;
         width: 75vw;
         display: flex;
         flex-direction: column;
@@ -96,16 +100,142 @@ header{
             margin-bottom: 1.5rem;
             font-size: 2rem;
         }
+        .selectedT{
+            font-size: 2.25rem;
+        }
     }
 }
 
 .about{
-    margin: 15vh auto;
-    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+    height: 80vh;
+    width: 80rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
     color: #fff;
+
+    .shadow{
+        font-size: 5rem;
+        opacity: .125;
+    }
+    
+    .skills{
+        margin: 5rem auto;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gradient-box{
+        width: 12rem;
+        height: 12rem;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        color: #232323;
+
+        svg{
+            width: 5rem;
+        }
+        p{
+            margin-top: 1rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 
     @media screen and (max-width: 768px) {
         margin: 15vh 2.5rem;
+    }
+}
+
+.projects{
+    margin-top: 5rem;
+    height: 100%;
+    .card1{
+        margin: 3rem 0;
+        padding: 3rem;
+        width: 80%;
+        display: flex;
+        background:radial-gradient(#000 30%, $bg-color-2);
+        border-radius: 4rem;
+        img{
+            width: 100%;
+        }
+        .info{
+            padding: 1rem 0 1rem 2rem;
+            h2{
+                margin-bottom: 1rem;
+            }
+            ul{
+                list-style: disc;
+                li{
+                    margin-bottom: .75rem;
+                }
+            }
+            p{
+                margin-top: 1rem;
+                a{
+                    margin-left: .5rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .card2{
+        margin: 3rem 0;
+        padding: 3rem;
+        width: 80%;
+        align-self: flex-end;
+        display: flex;
+        background:radial-gradient(#000 30%, $bg-color-2);
+        border-radius: 4rem;
+        img{
+            width: 100%;
+        }
+        .info{
+            padding: 1rem 0 1rem 2rem;
+            h2{
+                margin-bottom: 1rem;
+            }
+            ul{
+                list-style: disc;
+                li{
+                    margin-bottom: .75rem;
+                }
+            }
+            p{
+                margin-top: 1rem;
+                a{
+                    margin-left: .5rem;
+                    color: #fff;
+                }
+            }
+        }
     }
 }
 

@@ -59,7 +59,7 @@ nav ul li a {
 
 @media screen and (max-width: 768px) {
   nav {
-    padding: 1rem 2rem;
+    padding: 1rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -71,8 +71,10 @@ nav ul li a {
 }
 
 header {
-  margin: 10vh auto;
+  margin: 0 auto;
+  padding: 1rem;
   width: 80rem;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +89,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 300;
 }
 
@@ -104,12 +106,13 @@ header .selectedT {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 4.5rem;
   font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
   header {
-    margin: 7vh auto;
+    margin: 10vh auto;
     width: 75vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,17 +126,195 @@ header .selectedT {
     margin-bottom: 1.5rem;
     font-size: 2rem;
   }
+  header .selectedT {
+    font-size: 2.25rem;
+  }
 }
 
 .about {
-  margin: 15vh auto;
-  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+  height: 80vh;
+  width: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
+}
+
+.about .shadow {
+  font-size: 5rem;
+  opacity: .125;
+}
+
+.about .skills {
+  margin: 5rem auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .gradient-box {
+  width: 12rem;
+  height: 12rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #232323;
+}
+
+.about .gradient-box svg {
+  width: 5rem;
+}
+
+.about .gradient-box p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .about {
     margin: 15vh 2.5rem;
   }
+}
+
+.projects {
+  margin-top: 5rem;
+  height: 100%;
+}
+
+.projects .card1 {
+  margin: 3rem 0;
+  padding: 3rem;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: radial-gradient(#000 30%, #16213E);
+  border-radius: 4rem;
+}
+
+.projects .card1 img {
+  width: 100%;
+}
+
+.projects .card1 .info {
+  padding: 1rem 0 1rem 2rem;
+}
+
+.projects .card1 .info h2 {
+  margin-bottom: 1rem;
+}
+
+.projects .card1 .info ul {
+  list-style: disc;
+}
+
+.projects .card1 .info ul li {
+  margin-bottom: .75rem;
+}
+
+.projects .card1 .info p {
+  margin-top: 1rem;
+}
+
+.projects .card1 .info p a {
+  margin-left: .5rem;
+  color: #fff;
+}
+
+.projects .card2 {
+  margin: 3rem 0;
+  padding: 3rem;
+  width: 80%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: radial-gradient(#000 30%, #16213E);
+  border-radius: 4rem;
+}
+
+.projects .card2 img {
+  width: 100%;
+}
+
+.projects .card2 .info {
+  padding: 1rem 0 1rem 2rem;
+}
+
+.projects .card2 .info h2 {
+  margin-bottom: 1rem;
+}
+
+.projects .card2 .info ul {
+  list-style: disc;
+}
+
+.projects .card2 .info ul li {
+  margin-bottom: .75rem;
+}
+
+.projects .card2 .info p {
+  margin-top: 1rem;
+}
+
+.projects .card2 .info p a {
+  margin-left: .5rem;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

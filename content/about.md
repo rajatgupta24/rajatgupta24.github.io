@@ -22,5 +22,5 @@ If I'm not working you will find me playing outdoor⚽.
 
 If you want to get in touch, I’m most responsive over email and I tend to be pretty active on Twitter as well💬.
 
-Most recently, I worked for a startup [thoughtz.ai]([thoughtz.ai]) as a **Full stack Developer**. 
+Most recently, I worked for a startup [thoughtz.ai](https://thoughtz.ai/) as a **Full stack Developer**. 
 During my college I worked as a **Project Committee Chairperson** at **IEEE MSIT** and I've also won **Linux Foundation Training Scholarship**🚀.

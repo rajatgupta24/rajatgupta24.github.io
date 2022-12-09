@@ -1,0 +1,65 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Rajat Gupta
+theme: PaperMod
+
+params:
+  env: production
+  ShowShareButtons: true
+  ShareButtons: ["linkedin", "twitter"]
+  ShowReadingTime: true
+  ShowToc: true
+  ShowCodeCopyButtons: true
+  
+  ShowPostNavLinks: true
+
+  defaultTheme: auto
+
+  assets:
+    disableHLJS: true
+
+  homeInfoParams:
+    Title: Hello! I'm Rajat Gupta
+    Content: I'm Software Developer and an Open Source Maintainer.
+
+  socialIcons:
+    # - name: "facebook"
+    #   url: "https://twitter.com/rajatgtwt"
+    # - name: "instagram"
+    #   url: "https://twitter.com/rajatgtwt"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/rajatgupta24/"
+    - name: "twitter"
+      url: "https://twitter.com/rajatgtwt"
+    - name: "github"
+      url: "https://github.com/rajatgupta24"
+    - name: "polywork"
+      url: "https://www.polywork.com/rajatgupta24"
+    - name: "medium"
+      url: "https://medium.com/@rajat2411gupta"
+
+  editPost:
+    URL: "https://github.com/rajatgupta24/blog/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+markup:
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    # noClasses: false
+    style: monokai
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: blogs
+      name: Blogs
+      url: /blogs/
+      weight: 10
+    

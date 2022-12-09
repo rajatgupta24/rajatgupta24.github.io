@@ -1,0 +1,11 @@
+/*
+Contains custom styles
+*/
+
+.chroma {
+    background-color: unset !important;
+}
+
+.post-meta > a {
+    margin-left: auto;
+}

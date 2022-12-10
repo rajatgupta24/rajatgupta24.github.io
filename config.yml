@@ -10,19 +10,19 @@ params:
   ShowReadingTime: true
   ShowToc: true
   ShowCodeCopyButtons: true
-  
   ShowPostNavLinks: true
-
   defaultTheme: auto
 
   assets:
     disableHLJS: true
 
   homeInfoParams:
-    Title: Hello! I'm Rajat Gupta
-    Content: I'm Software Developer and an Open Source Maintainer.
+    Title: Hello! I'm Rajat 👋
+    Content: I'm Software Developer and an Open Source Maintainer who like to write Golang and JavaScript. Currently, I'm reading "Designing Data-Intensive Applications" -by Martin Kleppman, And preparing for CKAD and AWS CSA.
 
   socialIcons:
+    - name: "email"
+      url: "mailto:rajat2411gupta@gmail.com"
     # - name: "facebook"
     #   url: "https://twitter.com/rajatgtwt"
     # - name: "instagram"
@@ -37,6 +37,7 @@ params:
       url: "https://www.polywork.com/rajatgupta24"
     - name: "medium"
       url: "https://medium.com/@rajat2411gupta"
+    
 
   editPost:
     URL: "https://github.com/rajatgupta24/blog/tree/main/content"
@@ -62,4 +63,11 @@ menu:
       name: Blogs
       url: /blogs/
       weight: 10
-    
+    - identifier: blogs
+      name: Blogs
+      url: /blogs/
+      weight: 10
+    - name: Twitter
+      url: "https://twitter.com/rajatgtwt"
+    - name: Github
+      url: "https://github.com/rajatgupta24"

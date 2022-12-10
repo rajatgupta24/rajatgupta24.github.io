@@ -8,7 +8,7 @@ showToc: false
 showShareButtons: false
 ---
 
-## Hello, I'm Rajat 👋🏼
+## Hello, I'm Rajat 👋
 
 I'm a Computer Science undergraduate learning about software fundamentals.
 Currently, I'm focused on Jenkins X UI🎯.

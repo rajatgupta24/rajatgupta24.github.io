@@ -18,15 +18,11 @@ params:
 
   homeInfoParams:
     Title: Hello! I'm Rajat 👋
-    Content: I'm Software Developer and an Open Source Maintainer who like to write Golang and JavaScript. Currently, I'm reading "Designing Data-Intensive Applications" -by Martin Kleppman, And preparing for CKAD and AWS CSA.
+    Content: I work as a software dev for a startup building SaaS, constantly learning and improving skills to create high-quality software, I also like to share my experiences.
 
   socialIcons:
     - name: "email"
       url: "mailto:rajat2411gupta@gmail.com"
-    # - name: "facebook"
-    #   url: "https://twitter.com/rajatgtwt"
-    # - name: "instagram"
-    #   url: "https://twitter.com/rajatgtwt"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/rajatgupta24/"
     - name: "twitter"
@@ -37,7 +33,6 @@ params:
       url: "https://www.polywork.com/rajatgupta24"
     - name: "medium"
       url: "https://medium.com/@rajat2411gupta"
-    
 
   editPost:
     URL: "https://github.com/rajatgupta24/blog/tree/main/content"

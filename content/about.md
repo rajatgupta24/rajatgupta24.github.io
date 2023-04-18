@@ -8,19 +8,12 @@ showToc: false
 showShareButtons: false
 ---
 
-## Hello, I'm Rajat 👋
+## Hi There, I'm Rajat 👋
 
-I'm a Computer Science undergraduate learning about software fundamentals.
-Currently, I'm focused on Jenkins X UI🎯.
+I am currently working as a software developer for a startup that specializes in **building SaaS solutions**. Working in this environment has given me the opportunity to learn something new every day.
 
-Jenkins X UI was my **Google Summer of Code** Project as mentee. 
-During that I was introduced to Kubernetes, CRDs, Tekton, Kubebuilder, various GitOps Tools, Best Practices, CNCF and CDF Projects and there maintainers.
-I'm also a Maintainer in training (that's what we like to call it).
-In short, I'm an Open Source Enthusiast😁.
+I am proud to be a part of a team that is passionate about creating high-quality software that delivers real value to our customers.
 
-If I'm not working you will find me playing outdoor⚽.
+I am also a senior college student pursuing a **Bachelor's in Technology** in IT. I am also proud to have participated in the **Google Summer of Code** program with **Jenkins X**.
 
-If you want to get in touch, I’m most responsive over email and I tend to be pretty active on Twitter as well💬.
-
-Most recently, I worked for a startup [thoughtz.ai](https://thoughtz.ai/) as a **Full stack Developer**. 
-During my college I worked as a **Project Committee Chairperson** at **IEEE MSIT** and I've also won **Linux Foundation Training Scholarship**🚀.
+Recently, I joined the **CDF ambassador team**, where I have continued to expand my knowledge and skills within the field of IT. I am excited to share my journey and experiences with others, and I look forward to continuing to learn and grow as I move forward in my career.
